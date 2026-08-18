@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preference Period & Asset Recovery Analysis — Reese Bowling</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="../index.html" class="brand">Reese <span>Bowling</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#projects">Case Studies</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="../index.html#beyond">Beyond the Desk</a></li>
+      <li><a href="../index.html#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="cs-hero">
+  <div class="container">
+    <a href="../index.html#projects" class="back-link">← Back to case studies</a>
+    <span class="eyebrow">Crypto · Bankruptcy &amp; Asset Recovery</span>
+    <h1>Preference Period &amp; Asset Recovery Analysis</h1>
+    <p class="tagline">A multi-stage population-selection framework and dual-valuation recovery model built to support a post-bankruptcy preference period investigation for a collapsed cryptocurrency exchange.</p>
+    <div class="cs-meta">
+      <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Excel Modeling</span>
+      <span class="tag">Financial Remediation</span><span class="tag">PII Clustering</span>
+    </div>
+  </div>
+</header>
+
+<article class="cs-body">
+  <p><em>Note: client and institution names are withheld per confidentiality requirements. This engagement is described using generalized role and industry context only.</em></p>
+
+  <h2>The Challenge</h2>
+  <p>Following the collapse of a cryptocurrency trading platform, legal counsel needed to identify which account holders had engaged in suspicious activity ahead of the bankruptcy filing, and to quantify potential recovery amounts — starting from the platform's entire account population and narrowing to a defensible set of investigative targets.</p>
+
+  <h2>The Approach</h2>
+  <ul>
+    <li>Analyzed the full account population's transaction history — deposits, purchases, sales, and withdrawals — across the preference period to identify anomalous trading patterns and activity indicative of insider knowledge preceding the bankruptcy filing.</li>
+    <li>Engineered a multi-stage waterfall population-selection framework, applying layered inclusion and exclusion criteria including withdrawal thresholds ($100K+ in crypto withdrawals, or $100K+ in crypto sales with concurrent USD withdrawals), purchase-to-withdrawal ratios, portfolio value change thresholds, and null-value handling logic — ultimately scoping the eligible population to ~1,200 customers.</li>
+    <li>Collaborated with counsel to develop and iteratively refine preference analysis logic, incorporating attorney-directed email review findings to further narrow the targeted population to 47 accounts of investigative interest.</li>
+    <li>Constructed dual-methodology preference calculations — a transfer-date valuation model and a highest-asset valuation model — sourcing historical coin pricing with defensible fallback logic for coins with unavailable pricing data.</li>
+    <li>Performed account-level PII clustering using phone number and address field combinations to identify linked accounts and related-party relationships across the broader population.</li>
+    <li>Produced summary reports, descriptive statistics, and a Tableau dashboard visualizing trading trends and activity concentrations for counsel.</li>
+  </ul>
+
+  <div class="cs-callout">From an entire platform's account population to the ~50 highest-priority targets for legal action and recovery.</div>
+
+  <h2>The Impact</h2>
+  <ul>
+    <li>Scoped a universe of ~1,200 preference-eligible accounts from the full platform population through a rigorous, defensible multi-criteria waterfall methodology.</li>
+    <li>Delivered a targeted population of ~50 high-priority accounts for legal action, directly informing counsel's preference claim filings and asset recovery proceedings.</li>
+    <li>Produced dual-valuation preference calculations — including a highest-asset methodology capturing peak coin values — quantifying the full range of potential recovery amounts for litigation purposes.</li>
+    <li>Enabled legal counsel to identify potential insider trading activity and related-party account clusters, supporting investigative findings in a high-profile platform collapse.</li>
+  </ul>
+
+  <div class="cs-nav-footer">
+    <a href="revenue-recognition-platform.html">← Revenue Recognition Platform</a>
+    <a href="aml-model-validation.html">Next: AML Model Validation →</a>
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© <span id="year"></span> Reese Bowling. All rights reserved.</span>
+    <span>Case studies generalized to protect client confidentiality.</span>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fair Lending Statistical Review — Reese Bowling</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="../index.html" class="brand">Reese <span>Bowling</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#projects">Case Studies</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="../index.html#beyond">Beyond the Desk</a></li>
+      <li><a href="../index.html#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="cs-hero">
+  <div class="container">
+    <a href="../index.html#projects" class="back-link">← Back to case studies</a>
+    <span class="eyebrow">FinTech · Regulatory Compliance</span>
+    <h1>Fair Lending Statistical Review</h1>
+    <p class="tagline">Third-party independent statistical analysis supporting a fair lending investigation for a financial services provider operating under an FDIC Consent Order.</p>
+    <div class="cs-meta">
+      <span class="tag">AWS SageMaker</span><span class="tag">SQL</span><span class="tag">Python</span>
+      <span class="tag">DuckDB</span><span class="tag">Regression</span><span class="tag">Chi-Squared / Z-Tests</span>
+    </div>
+  </div>
+</header>
+
+<article class="cs-body">
+  <p><em>Note: client and institution names are withheld per confidentiality requirements. This engagement is described using generalized role and industry context only.</em></p>
+
+  <h2>The Challenge</h2>
+  <p>Embedded on a small analytics team, I served as a key technical resource in a fair lending investigation for a major financial services provider operating under an FDIC Consent Order. The task: independently and defensibly evaluate lending outcomes across 120 credit products for evidence of disparate treatment — at a scale of 150 million-plus applications.</p>
+
+  <h2>The Approach</h2>
+  <ul>
+    <li>Engineered reproducible ETL workflows to ingest, normalize, and reconcile 150M+ credit applications across disparate internal sources into a structured warehouse environment purpose-built for regulatory analysis.</li>
+    <li>Designed analytical data models spanning 120 credit products with 30+ underwriting attributes per product, incorporating demographic segmentation, approval/denial outcomes, and model feature attribution outputs.</li>
+    <li>Built automated statistical testing pipelines in Python (NumPy, SciPy, scikit-learn) executing chi-squared tests, linear and logistic regression, and data validation routines across large, high-variance datasets.</li>
+    <li>Translated statistical outputs into evidence-based findings for dual audiences — regulatory examiners (FDIC) and internal client stakeholders — supporting compliance remediation under a formal consent order.</li>
+  </ul>
+
+  <div class="cs-callout">150M+ credit applications reconciled and modeled across 120 credit products to support a formal regulatory response.</div>
+
+  <h2>The Impact</h2>
+  <ul>
+    <li>Supported identification of potential fair lending violations across a portfolio of 120 credit products serving millions of applicants.</li>
+    <li>Processed and reconciled 150M+ credit application records spanning 2021–2022, enabling comprehensive demographic and underwriting analysis at institutional scale.</li>
+    <li>Delivered analytical outputs directly informing the client's regulatory response to the FDIC, with findings used as evidentiary support in a federal consent order proceeding.</li>
+  </ul>
+
+  <div class="cs-nav-footer">
+    <a href="treasury-surveillance.html">← Treasury Trading Surveillance Model</a>
+    <a href="revenue-recognition-platform.html">Next: Revenue Recognition Platform →</a>
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© <span id="year"></span> Reese Bowling. All rights reserved.</span>
+    <span>Case studies generalized to protect client confidentiality.</span>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

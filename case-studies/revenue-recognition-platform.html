@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enterprise Revenue Recognition Platform — Reese Bowling</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="../index.html" class="brand">Reese <span>Bowling</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#projects">Case Studies</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="../index.html#beyond">Beyond the Desk</a></li>
+      <li><a href="../index.html#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="cs-hero">
+  <div class="container">
+    <a href="../index.html#projects" class="back-link">← Back to case studies</a>
+    <span class="eyebrow">Healthcare · Private Equity</span>
+    <h1>Enterprise Revenue Recognition Platform</h1>
+    <p class="tagline">A production-deployed revenue recognition and forecasting model built to unify billions of transaction records across five-plus disconnected systems.</p>
+    <div class="cs-meta">
+      <span class="tag">Redshift</span><span class="tag">SQL</span><span class="tag">Python</span>
+      <span class="tag">ETL</span><span class="tag">Tableau</span><span class="tag">Production Deployment</span>
+    </div>
+  </div>
+</header>
+
+<article class="cs-body">
+  <p><em>Note: client and institution names are withheld per confidentiality requirements. This engagement is described using generalized role and industry context only.</em></p>
+
+  <h2>The Challenge</h2>
+  <p>A private-equity-backed healthcare company needed a single, reliable revenue recognition and forecasting solution — one capable of integrating billions of historical claim and payment transaction records scattered across five-plus disconnected systems into one production-grade reporting platform finance leadership could trust for month-end close.</p>
+
+  <h2>The Approach</h2>
+  <ul>
+    <li>Developed a revenue recognition data model in Redshift integrating billions of historical claim and payment transaction records aggregated from 5+ disparate source systems, including NetSuite extracts, backend Redshift data tables, and manually generated datasets.</li>
+    <li>Built an automated ETL pipeline to standardize, reconcile, and load multi-source financial data into the revenue model, and assisted with end-to-end deployment of the solution to the client's production environment.</li>
+    <li>Designed a Tableau dashboard surfacing forward-looking payment forecasts and cash flow projections, leveraging historical payment cycle behavior across multi-year datasets to support executive financial planning and reporting.</li>
+  </ul>
+
+  <div class="cs-callout">Billions of transaction records. Five-plus source systems. One production-deployed model finance leadership relies on for month-end close.</div>
+
+  <h2>The Impact</h2>
+  <ul>
+    <li>Delivered a production-deployed revenue recognition model consolidating 5+ financial systems and billions of transaction records, providing the client with a reliable, scalable foundation for month-end close and financial reporting.</li>
+    <li>Enabled forward-looking cash flow visibility through Tableau forecasting dashboards, equipping finance leadership with data-driven projections grounded in multi-year historical payment patterns.</li>
+    <li>Automated previously manual reconciliation and reporting workflows, materially reducing processing time and improving analytical accuracy across the revenue recognition process.</li>
+  </ul>
+
+  <div class="cs-nav-footer">
+    <a href="fair-lending-analysis.html">← Fair Lending Statistical Review</a>
+    <a href="preference-period-analysis.html">Next: Preference Period Analysis →</a>
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© <span id="year"></span> Reese Bowling. All rights reserved.</span>
+    <span>Case studies generalized to protect client confidentiality.</span>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
