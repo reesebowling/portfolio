@@ -82,6 +82,19 @@ p { margin: 0 0 1em; }
 .section--dark .eyebrow { color: #d68a5f; }
 .section--dark p { color: var(--color-text-inverse-soft); }
 .section--dark h2, .section--dark h3 { color: var(--color-text-inverse); }
+.section--dark .project-card {
+  background: var(--color-bg);
+  border-color: var(--color-line);
+}
+.section--dark .project-card:hover { box-shadow: 0 16px 30px rgba(0,0,0,0.4); }
+.section--dark .project-card .eyebrow { color: var(--color-accent); }
+.section--dark .project-card h3 { color: var(--color-text); }
+.section--dark .project-card p { color: var(--color-text-soft); }
+.section--dark .project-card .tag {
+  color: var(--color-text-soft);
+  border-color: var(--color-line);
+  background: rgba(255,255,255,0.5);
+}
 
 .section-head {
   max-width: 640px;
@@ -93,9 +106,16 @@ p { margin: 0 0 1em; }
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(247, 243, 236, 0.92);
+  background: rgba(35, 36, 31, 0.94);
   backdrop-filter: blur(6px);
-  border-bottom: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line-dark);
+}
+.site-nav .brand { color: var(--color-text-inverse); }
+.nav-links a { color: var(--color-text-inverse-soft); }
+.nav-links a:hover { color: var(--color-text-inverse); }
+.nav-cta {
+  background: var(--color-accent) !important;
+  color: #fff !important;
 }
 .site-nav .container {
   display: flex;
@@ -131,7 +151,7 @@ p { margin: 0 0 1em; }
 .nav-toggle { display: none; background: none; border: none; font-size: 1.4rem; cursor: pointer; }
 
 @media (max-width: 760px) {
-  .nav-links { position: absolute; top: 64px; left: 0; right: 0; background: var(--color-bg); flex-direction: column; padding: 1rem 1.5rem 1.5rem; border-bottom: 1px solid var(--color-line); display: none; gap: 1rem; }
+  .nav-links { position: absolute; top: 64px; left: 0; right: 0; background: var(--color-bg-dark); flex-direction: column; padding: 1rem 1.5rem 1.5rem; border-bottom: 1px solid var(--color-line-dark); display: none; gap: 1rem; }
   .nav-links.open { display: flex; }
   .nav-toggle { display: block; }
 }
@@ -310,7 +330,6 @@ p { margin: 0 0 1em; }
   color: var(--color-text-inverse-soft);
   font-size: 0.78rem;
   text-align: center;
-  padding: 1rem;
   overflow: hidden;
 }
 .venture-photo img {
