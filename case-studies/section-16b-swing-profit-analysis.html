@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Section 16(b) Short-Swing Profit Analysis | Reese Bowling</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="../index.html" class="brand">Reese <span>Bowling</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#projects">Case Studies</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="../index.html#beyond">Beyond the Desk</a></li>
+      <li><a href="../index.html#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="cs-hero">
+  <div class="container">
+    <a href="../index.html#additional-projects" class="back-link">← Back to additional projects</a>
+    <span class="eyebrow">Investment Banking &middot; Expert Report</span>
+    <h1>Section 16(b) Short-Swing Profit Analysis</h1>
+    <p class="tagline">A securities law expert report quantifying short-swing profit liability under Section 16(b) across a major financial institution's closed-end fund trading activity.</p>
+    <div class="cs-meta">
+      <span class="tag">SQL</span><span class="tag">Python</span><span class="tag">AWS</span><span class="tag">ETL</span><span class="tag">EDA</span><span class="tag">Expert Report</span>
+    </div>
+  </div>
+</header>
+
+<article class="cs-body">
+  <p><em>Note: client and institution names are withheld per confidentiality requirements. This engagement is described using generalized role and industry context only.</em></p>
+
+  <h2>The Challenge</h2>
+  <p>A securities law expert witness engaged by outside counsel needed to assess potential short-swing profit liabilities under Section 16(b) of the Securities Exchange Act of 1934 for a major financial institution's registered closed-end fund trading activity, across a highly fragmented set of internal trading systems.</p>
+
+  <h2>The Approach</h2>
+  <ul>
+    <li>Consolidated and harmonized trading data across five internal bank platforms, spanning equities, warrants, rights, fixed income, listed options, OTC options, and swaps, identified by CUSIP and internal security identifiers, into a unified analytical dataset.</li>
+    <li>Built automated exploratory data analysis profiling scripts to systematically surface data quality issues, flag inconsistencies across platforms, and validate completeness of position and transaction records prior to expert analysis.</li>
+    <li>Reconciled end-of-day position data against transaction-level records across core trading systems to confirm data integrity and ensure no reportable activity was omitted from the liability analysis.</li>
+    <li>Applied a 10% beneficial ownership threshold across the full closed-end fund population to identify funds where the bank's aggregate holdings triggered Section 16(b) reporting obligations, accounting for complex instrument types including derivatives and OTC products.</li>
+    <li>Constructed matched purchase-and-sale schedules across a six-month short-swing window for each triggered fund, calculating disgorgeable profit amounts per the statutory formula and applicable SEC guidance.</li>
+    <li>Prepared structured analytical workproduct organized by fund, transaction pair, and profit amount, suitable for regulatory submission and potential litigation use.</li>
+  </ul>
+
+  <div class="cs-callout">Reconciled trading data across five internal platforms to scope Section 16(b) exposure fund by fund, transaction pair by transaction pair.</div>
+
+  <h2>The Impact</h2>
+  <ul>
+    <li>Processed and reconciled trading activity across five disparate internal platforms encompassing equity, fixed income, listed options, and OTC derivative instruments, establishing a defensible, audit-ready dataset for expert testimony.</li>
+    <li>Identified the subset of positions breaching the 10% beneficial ownership threshold, enabling precise scoping of Section 16(b) liability exposure across a complex, multi-instrument trading book.</li>
+    <li>Delivered structured short-swing profit calculations and supporting workpapers that directly informed the expert's report to outside counsel, providing a quantified liability estimate for regulatory engagement and potential disgorgement proceedings.</li>
+  </ul>
+
+  <div class="cs-nav-footer">
+    <a href="../index.html#additional-projects">← Back to additional projects</a>
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© <span id="year"></span> Reese Bowling. All rights reserved.</span>
+    <span>Case studies generalized to protect client confidentiality.</span>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

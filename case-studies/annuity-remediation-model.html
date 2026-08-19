@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Annuity Contract Remediation Engine | Reese Bowling</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="../index.html" class="brand">Reese <span>Bowling</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#projects">Case Studies</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="../index.html#beyond">Beyond the Desk</a></li>
+      <li><a href="../index.html#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="cs-hero">
+  <div class="container">
+    <a href="../index.html#projects" class="back-link">← Back to case studies</a>
+    <span class="eyebrow">Life Insurance &amp; Retirement &middot; Class Action Remediation</span>
+    <h1>Annuity Contract Remediation Engine</h1>
+    <p class="tagline">A Python remediation engine built to quantify class action exposure across 30,000+ annuity contracts and a decade of interest rate history.</p>
+    <div class="cs-meta">
+      <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">GitHub</span><span class="tag">Financial Remediation</span><span class="tag">Interest Rate Modeling</span>
+    </div>
+  </div>
+</header>
+
+<article class="cs-body">
+  <p><em>Note: client and institution names are withheld per confidentiality requirements. This engagement is described using generalized role and industry context only.</em></p>
+
+  <h2>The Challenge</h2>
+  <p>A major financial services company faced mediation in a class action lawsuit alleging that fixed annuity participants had received lower guaranteed minimum interest rates than contractually promised following a 2014 process change. The company needed a defensible, contract-level calculation of remediation exposure ahead of mediation.</p>
+
+  <h2>The Approach</h2>
+  <ul>
+    <li>Engaged subject matter experts to reverse-engineer annuity product mechanics, mapping how rollover transactions and account type changes affected interest accrual logic across the affected population.</li>
+    <li>Identified and documented representative scenarios and edge cases for rollover accounts, ensuring comprehensive logic coverage before model development.</li>
+    <li>Built a Python-based remediation engine, an 8-module custom system, replicating the client's core system logic to calculate pro forma account balances, modeling what each affected account would have accrued under the correct guaranteed minimum interest rate over the full life of the contract.</li>
+    <li>Directed an analytics framework evaluating approximately 30,000 annuity contracts spanning 10+ years and roughly 2 million transactions, defining financial KPIs to quantify remediation impact across distinct account populations.</li>
+    <li>Designed validation methodologies to reconcile interest accruals, loan-adjusted balances, and contract rebalancing rules, ensuring accurate financial impact modeling across complex, multi-decade transaction histories.</li>
+  </ul>
+
+  <div class="cs-callout">A custom 8-module Python engine reconciled a decade of annuity transactions down to the individual contract, cutting the client's loss estimate by $6M+.</div>
+
+  <h2>The Impact</h2>
+  <ul>
+    <li>Quantified $10 million in total restitution liability across roughly 10,000 affected annuity accounts, providing the evidentiary basis for mediation.</li>
+    <li>Reduced the client's initial loss estimate by $6 million or more through improved analytical precision, replacing rough approximations with a contract-level remediation engine built on validated system logic.</li>
+    <li>Processed and reconciled roughly 2 million transactions across 30,000+ contracts spanning 10+ years, enabling account-level accuracy at a scale the client had not previously achieved internally.</li>
+  </ul>
+
+  <div class="cs-nav-footer">
+    <a href="../index.html#projects">← Back to case studies</a>
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© <span id="year"></span> Reese Bowling. All rights reserved.</span>
+    <span>Case studies generalized to protect client confidentiality.</span>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

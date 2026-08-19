@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Reese Bowling — Portfolio Site
+   Reese Bowling | Portfolio Site
    Design: professional-with-rugged-warmth
    ========================================================================== */
 
@@ -7,7 +7,7 @@
   /* Palette */
   --color-bg: #f7f3ec;          /* warm stone */
   --color-bg-alt: #efe8db;      /* deeper stone panel */
-  --color-bg-dark: #23241f;     /* charcoal — for dark sections/footer */
+  --color-bg-dark: #23241f;     /* charcoal, for dark sections/footer */
   --color-bg-dark-alt: #2c2d26;
   --color-text: #262420;        /* near-black warm charcoal */
   --color-text-soft: #55524a;
@@ -261,6 +261,35 @@ p { margin: 0 0 1em; }
 .project-card .read-more { font-weight: 600; font-size: 0.88rem; color: var(--color-accent); }
 .project-card .read-more::after { content: " →"; }
 
+/* ---------- Additional Projects (compact) ---------- */
+.projects-grid--compact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+}
+.project-card--compact {
+  padding: 1.15rem 1.3rem;
+}
+.project-card--compact .eyebrow {
+  font-size: 0.66rem;
+  margin-bottom: 0.5rem;
+}
+.project-card--compact h3 {
+  font-size: 1.02rem;
+  margin-bottom: 0.7rem;
+  line-height: 1.25;
+}
+.project-card--compact .tag-row {
+  margin: 0 0 0.9rem;
+}
+.project-card--compact .tag {
+  font-size: 0.66rem;
+  padding: 0.22rem 0.5rem;
+}
+.project-card--compact .read-more {
+  font-size: 0.8rem;
+}
+
 /* ---------- Beyond the Desk ---------- */
 .venture-grid {
   display: grid;
@@ -290,9 +319,22 @@ p { margin: 0 0 1em; }
   object-fit: cover;
 }
 .venture-photo--logo {
-  background: var(--color-bg);
+  position: relative;
+  background: linear-gradient(180deg, #d9c093, #c7a877);
 }
-.venture-photo--logo img {
+.venture-photo--logo img.venture-art {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  opacity: 0.28;
+}
+.venture-photo--logo img.venture-logo {
+  position: relative;
+  z-index: 2;
   object-fit: contain;
   padding: 1.5rem;
   width: 100%;
@@ -328,7 +370,7 @@ p { margin: 0 0 1em; }
 
 /* ---------- Case study pages ---------- */
 .cs-hero { padding: 3.5rem 0 3rem; border-bottom: 1px solid var(--color-line); }
-.cs-hero .back-link { font-size: 0.85rem; font-weight: 600; color: var(--color-text-soft); display: inline-block; margin-bottom: 1.6rem; }
+.cs-hero .back-link { font-size: 0.85rem; font-weight: 600; color: var(--color-text-soft); display: block; margin-bottom: 1.6rem; }
 .cs-hero .back-link:hover { color: var(--color-accent); }
 .cs-meta { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.4rem 0; }
 .cs-body { max-width: 720px; margin: 0 auto; padding: 3.5rem 1.5rem; }

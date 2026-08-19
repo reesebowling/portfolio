@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advertising Data Copyright Infringement Analysis | Reese Bowling</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="../index.html" class="brand">Reese <span>Bowling</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#projects">Case Studies</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="../index.html#beyond">Beyond the Desk</a></li>
+      <li><a href="../index.html#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="cs-hero">
+  <div class="container">
+    <a href="../index.html#additional-projects" class="back-link">← Back to additional projects</a>
+    <span class="eyebrow">Technology &middot; Intellectual Property Litigation</span>
+    <h1>Advertising Data Copyright Infringement Analysis</h1>
+    <p class="tagline">Large-scale advertising data processing and fuzzy-matching analysis supporting an expert witness engagement in a copyright infringement case.</p>
+    <div class="cs-meta">
+      <span class="tag">Databricks</span><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">AWS S3</span><span class="tag">Fuzzy Matching</span>
+    </div>
+  </div>
+</header>
+
+<article class="cs-body">
+  <p><em>Note: client and institution names are withheld per confidentiality requirements. This engagement is described using generalized role and industry context only.</em></p>
+
+  <h2>The Challenge</h2>
+  <p>An expert witness engagement required large-scale advertising data processing for a major technology company, supporting a copyright infringement analysis that depended on identifying infringing URLs buried in unstructured advertising records.</p>
+
+  <h2>The Approach</h2>
+  <ul>
+    <li>Built an automated ETL pipeline leveraging AWS S3 and Databricks to ingest and process large volumes of advertising data, including ad records, merchant attributes, impressions, and click data.</li>
+    <li>Transformed a semi-structured single-text field containing compound advertising attributes into a structured analytical dataset, enabling systematic analysis across previously unstructured records.</li>
+    <li>Implemented fuzzy matching and keyword search logic in Python to identify infringing URLs across the advertising dataset, surfacing matches that exact-string methods would have missed.</li>
+    <li>Leveraged an in-house AI tool to optimize data lineage tracking and strengthen controls across data files, improving traceability and auditability of analytical outputs.</li>
+  </ul>
+
+  <div class="cs-callout">Fuzzy matching surfaced infringing URLs buried in unstructured ad data that exact-match methods would have missed entirely.</div>
+
+  <h2>The Impact</h2>
+  <ul>
+    <li>Delivered a structured, analysis-ready dataset from raw semi-structured advertising data, enabling the expert witness to perform systematic URL-level infringement analysis at scale.</li>
+    <li>Fuzzy matching and keyword logic surfaced infringing URLs that would have been undetectable through traditional exact-match approaches, materially expanding the scope of identified infringement.</li>
+    <li>Improved data lineage and auditability across the engagement through AI-assisted controls, producing a defensible analytical record suitable for expert report and potential litigation use.</li>
+  </ul>
+
+  <div class="cs-nav-footer">
+    <a href="../index.html#additional-projects">← Back to additional projects</a>
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© <span id="year"></span> Reese Bowling. All rights reserved.</span>
+    <span>Case studies generalized to protect client confidentiality.</span>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

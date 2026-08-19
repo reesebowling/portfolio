@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trade-Based Money Laundering Network Investigation | Reese Bowling</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="../index.html" class="brand">Reese <span>Bowling</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#projects">Case Studies</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="../index.html#beyond">Beyond the Desk</a></li>
+      <li><a href="../index.html#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="cs-hero">
+  <div class="container">
+    <a href="../index.html#projects" class="back-link">← Back to case studies</a>
+    <span class="eyebrow">Bank Holding Company &middot; Financial Crimes</span>
+    <h1>Trade-Based Money Laundering Network Investigation</h1>
+    <p class="tagline">Network analytics and PII linkage across ten years of transaction history to uncover a trade-based money laundering scheme involving bulk electronics purchases.</p>
+    <div class="cs-meta">
+      <span class="tag">Databricks</span><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Network Analysis</span><span class="tag">Credit Card Analytics</span>
+    </div>
+  </div>
+</header>
+
+<article class="cs-body">
+  <p><em>Note: client and institution names are withheld per confidentiality requirements. This engagement is described using generalized role and industry context only.</em></p>
+
+  <h2>The Challenge</h2>
+  <p>Outside legal counsel needed support investigating alleged trade-based money laundering involving bulk electronics purchases at a major financial services corporation, working directly alongside the client's financial crime unit to determine whether employees and third-party payors were coordinating suspicious transactions.</p>
+
+  <h2>The Approach</h2>
+  <ul>
+    <li>Developed a data ingestion and standardization pipeline consolidating ten years of transaction history for subjects of interest, enabling systematic pattern detection across a large, multi-source dataset.</li>
+    <li>Performed network analytics using PII linkage (name, date of birth, government IDs) to surface previously unknown relationships and connections between employees and third-party payors.</li>
+    <li>Analyzed cardholder transaction behavior across roughly 300 internal employees and 250+ external payment entities, identifying anomalous activity patterns and network clusters indicative of coordinated conduct.</li>
+    <li>Executed time-series and network analytics in Databricks (SQL and Python) to detect behavioral anomalies, map transaction flows, and support enhancements to the client's ongoing transaction monitoring program.</li>
+    <li>Constructed KPI frameworks to quantify fraud detection and monitoring performance, including alert rates, escalation rates, and false-positive ratios across high-volume credit card portfolios.</li>
+    <li>Compiled statistical evidence to substantiate filed Suspicious Activity Reports and corroborate investigative findings, validating results against initial reports and identifying further suspicious conduct.</li>
+  </ul>
+
+  <div class="cs-callout">PII network linkage surfaced connections across 300+ employees and 250+ external payors, corroborating $5B+ in suspicious activity.</div>
+
+  <h2>The Impact</h2>
+  <ul>
+    <li>Identified $5 billion or more in fraudulent transactions and $3 billion or more in suspicious payments across the subject population.</li>
+    <li>Corroborated evidence of employee collusion, concentrated bulk electronics and gift card purchases, and anomalous airline ticket spend, directly supporting SAR filings and government and regulator inquiry responses.</li>
+    <li>Uncovered additional network linkages among subjects beyond the original investigation scope, expanding the evidentiary record for outside counsel and regulators.</li>
+  </ul>
+
+  <div class="cs-nav-footer">
+    <a href="../index.html#projects">← Back to case studies</a>
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© <span id="year"></span> Reese Bowling. All rights reserved.</span>
+    <span>Case studies generalized to protect client confidentiality.</span>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
